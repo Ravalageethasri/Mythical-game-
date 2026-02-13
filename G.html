@@ -1,0 +1,31 @@
+<div class="game">
+  <h1>⚔ Mythical RPG Adventure ⚔</h1>
+
+  <div class="level-box">
+    <h2 id="levelTitle"></h2>
+    <h3 id="score">Score: 0</h3>
+  </div>
+
+  <!-- Treasure Level -->
+  <div id="locations">
+    <p>Choose the correct location:</p>
+    <button onclick="checkLocation(1)">🌋 Fire Cave</button>
+    <button onclick="checkLocation(2)">🌲 Forest</button>
+    <button onclick="checkLocation(3)">🏰 Temple</button>
+  </div>
+
+  <!-- Battle Area -->
+  <div id="battleArea" style="display:none;">
+    <h2 id="enemyName"></h2>
+    <img id="enemyImage" width="200">
+    
+    <div class="health-bar">
+      <div id="healthFill"></div>
+    </div>
+
+    <button onclick="attack()">⚔ Attack</button>
+  </div>
+
+  <h2 id="result"></h2>
+  <button onclick="restartGame()" class="restart">Restart</button>
+    </div>
